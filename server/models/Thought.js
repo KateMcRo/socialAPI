@@ -1,4 +1,4 @@
-const mongoose = require("../config/connection");
+const mongoose = require("mongoose");
 const dayjs = require("dayjs");
 const reactionSchema = require("./Reaction");
 
