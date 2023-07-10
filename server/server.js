@@ -5,6 +5,7 @@ const api = require("./api");
 const db = require("./config/connection.js");
 
 app.use(express.json());
+
 app.use("/api", api);
 async function start() {
   await db;
