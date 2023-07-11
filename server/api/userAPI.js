@@ -91,7 +91,6 @@ router.delete("/:userID/friends/:friendID", async (req, res) => {
   const userId = req.params.userID;
   const friendId = req.params.friendID;
   const user = await User.findById(userId);
-  const friend = await User.findById(friendId);
   const friendIndex = user.friends.indexOf(friendId);
   user.friends.splice(friendIndex, 1);
   await user.save();

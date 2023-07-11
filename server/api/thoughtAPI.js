@@ -96,7 +96,6 @@ router.post("/:thoughtId/reactions", async (req, res) => {
 router.delete("/:thoughtId/reactions/:reactionId", async (req, res) => {
   try {
     const thoughtId = req.params.thoughtId;
-    // use _id value
     const reactionId = req.params.reactionId;
 
     const thought = await Thought.findById(thoughtId);
